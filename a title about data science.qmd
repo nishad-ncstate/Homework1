@@ -1,0 +1,69 @@
+------------------------------------------------------------------------
+
+title: "A Title About Data Science" format: html editor: visual ---
+
+# What is Being a Data Scientist About?
+
+Being a data scientist involves collecting, analyzing, and interpreting large sets of data to help organizations make data-driven decisions. The role combines elements from several fields, including statistics, computer science, and domain-specific knowledge. A data scientist uses various tools and techniques such as machine learning, data mining, and predictive modeling to uncover patterns, generate insights, and solve complex problems. Their work often involves:
+
+Cleaning and preparing data for analysis. Designing and implementing algorithms and models. Visualizing data and communicating findings to stakeholders. Understanding and applying statistical techniques. Working with big data technologies to handle large datasets.
+
+Overall, a data scientist aims to extract meaningful insights from data to drive decision-making processes in an organization.
+
+# Differences and Similarities Between Data Scientists and Statisticians
+
+Similarities
+
+Both roles require a strong foundation in statistical methods and techniques. Both involve analyzing data to identify trends, patterns, and insights. Both need to communicate their findings clearly to non-technical stakeholders. Both use software tools for data analysis, although the specific tools may differ.
+
+Differences
+
+Scope and Tools: Data scientists often work with larger and more complex datasets, including unstructured data. They use a wider range of tools and technologies such as programming languages (e.g., Python, R), databases (e.g., SQL), and big data platforms (e.g., Hadoop, Spark). Focus on Machine Learning: Data scientists frequently build and apply machine learning models to make predictions or automate decisions. Statisticians may not focus as heavily on machine learning. Interdisciplinary Nature: Data science is more interdisciplinary, integrating knowledge from computer science, engineering, and domain-specific areas, whereas statisticians may focus more on developing new statistical methodologies and theoretical foundations. Business Application: Data scientists often work closely with business units to solve specific problems and provide actionable insights, while statisticians may work more in research or theoretical aspects of data analysis.
+
+# My View on These Fields
+
+In relation to these fields, I see myself as more of a data scientist as I have a stronger technical and business analyst background
+
+# R Code Analysis
+
+## In this section, we will analyze the `Sepal.Length` from the `iris` dataset using density estimation.
+
+```{r}
+
+
+# Calculate density of Sepal.Length
+y <- density(iris$Sepal.Length)
+
+# Determine class, type, and structure of y
+class(y)
+typeof(y)
+str(y)
+
+# Plot the density
+plot(y)
+```
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
